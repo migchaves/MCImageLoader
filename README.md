@@ -16,11 +16,13 @@ It's also possible to set the transition duration between the placeholder and th
 
 Simple usage:
 
+1 - Import the library
+
 ```ruby
 import MCImageLoader
 ```
 
-Configure (if you do not want to use the default values):
+2 - Configure (if you do not want to use the default values):
 
 ```
 MCImageLoader.sharedInstance.usesFastCache = true
@@ -28,7 +30,7 @@ MCImageLoader.sharedInstance.fastCacheCapacity = 10
 MCImageLoader.sharedInstance.animationDuration = 0.8
 ```
 
-Load an image with placeholder:
+3 - Load an image with placeholder:
 
 ```ruby
 MCImageLoader.sharedInstance.loadImage(imageUrl,
