@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         MCImageLoader.sharedInstance.usesFastCache = true
         MCImageLoader.sharedInstance.fastCacheCapacity = 10
+        MCImageLoader.sharedInstance.animationDuration = 0.8
     }
     
     // MARK:

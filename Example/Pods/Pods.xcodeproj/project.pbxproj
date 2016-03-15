@@ -10,6 +10,8 @@
 		1087F3BC4CFA1CBE4A83EC60939C5958 /* MCImageLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61ACECA6221140F4B4B7B1107D90AB16 /* MCImageLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		301162288047482160B6DDEF47EA2151 /* MCImageLoader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9437ECEA852C71CD721ED17BE8285C62 /* MCImageLoader.bundle */; };
 		4ABF0B561C9814D0005A6B04 /* MCImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF0B551C9814D0005A6B04 /* MCImageLoader.swift */; };
+		4ABF0B641C985485005A6B04 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 4ABF0B631C985485005A6B04 /* .gitkeep */; };
+		4ABF0B661C98548F005A6B04 /* imageloader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4ABF0B651C98548F005A6B04 /* imageloader.gif */; };
 		6D3AA10ABB05953758A5241944D55888 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		81C27AFC1DF7E425EE335B4C83518CB7 /* Pods-MCImageLoader_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AE3C67009F1EA4638319FBA5D8B807 /* Pods-MCImageLoader_Example-dummy.m */; };
 		ABFB2341D38A5426B2B5A322A061C89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -53,6 +55,8 @@
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46837CC097FEBCCCC2BFE385BEDAA1FF /* MCImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MCImageLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABF0B551C9814D0005A6B04 /* MCImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCImageLoader.swift; sourceTree = "<group>"; };
+		4ABF0B631C985485005A6B04 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		4ABF0B651C98548F005A6B04 /* imageloader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = imageloader.gif; sourceTree = "<group>"; };
 		55EABE46749EE02813FD49ADC8134DE8 /* Pods-MCImageLoader_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MCImageLoader_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		61ACECA6221140F4B4B7B1107D90AB16 /* MCImageLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCImageLoader-umbrella.h"; sourceTree = "<group>"; };
 		710778277D9D127AF639BFC76F9B849C /* Pods-MCImageLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCImageLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ABF0B621C985485005A6B04 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4ABF0B651C98548F005A6B04 /* imageloader.gif */,
+				4ABF0B631C985485005A6B04 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		6A9D245466068EF89F443CE9777C77C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +188,7 @@
 		9CD2FC5B327768D462C66CA689F8E997 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				4ABF0B621C985485005A6B04 /* Assets */,
 				DBC8455486B78A99FF179F1A11CA7796 /* Classes */,
 			);
 			path = Pod;
@@ -383,6 +397,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				301162288047482160B6DDEF47EA2151 /* MCImageLoader.bundle in Resources */,
+				4ABF0B641C985485005A6B04 /* .gitkeep in Resources */,
+				4ABF0B661C98548F005A6B04 /* imageloader.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
