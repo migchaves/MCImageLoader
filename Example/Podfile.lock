@@ -1,0 +1,14 @@
+PODS:
+  - MCImageLoader (0.1.0)
+
+DEPENDENCIES:
+  - MCImageLoader (from `../`)
+
+EXTERNAL SOURCES:
+  MCImageLoader:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MCImageLoader: 819ddd9fb1d89572770aba6401f562d558c0dbae
+
+COCOAPODS: 0.39.0
