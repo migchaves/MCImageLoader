@@ -181,6 +181,7 @@ public class MCImageLoader: NSObject {
         let array = imageUrl.componentsSeparatedByString("/")
         let pathFile = getFilePathToImageUrl(array.last!)
         
+        // Check if image exists in the file system
         if (NSFileManager.defaultManager().fileExistsAtPath(pathFile)) {
             data = NSData(contentsOfFile: pathFile)
             
@@ -190,20 +191,26 @@ public class MCImageLoader: NSObject {
         }
         
         if (nil == data) {
+            // Image doesnt exist in file system so let's retrieve it from the Internet
             let url = NSURL(string: imageUrl)
             data = NSMutableData(contentsOfURL: url!)
             
             if ((data != nil) && (data?.length != 0)) {
+                // Save the image in the file system
                 data?.writeToFile(pathFile, atomically: true)
             }
         }
         
-        if (data != nil) {
+        // Save the image in the fast cache
+        if (data != nil && (true == self.usesFastCache)) {
             self.cacheDictionary.addEntriesFromDictionary([array.last!: UIImage(data: data!)!])
         }
         
         return data
     }
+    
+    // MARK:
+    // MARK: - Format path
     
     func getFilePathToImageUrl(imageUrl: String) -> String {
         return self.filePath + "/" + imageUrl
